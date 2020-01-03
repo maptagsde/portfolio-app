@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Fragment } from "react";
+import { Sidebar } from "./components/Sidebar";
+import { Introduction } from "./components/Introduction";
+
+import Grid from "@material-ui/core/Grid";
+import { About } from "./components/About";
+import { Timeline } from "./components/Timeline";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div id="nav">
+        <Sidebar />
+      </div>
+
+      <div id="content">
+        <Introduction id="introduction" />
+        <About id="about" />
+        <Timeline id="timeline" />
+      </div>
+    </Fragment>
   );
 }
 
