@@ -3,7 +3,7 @@ import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 
 export const Introduction = ({ id }) => {
-  let Background = "/images/intro.jpg";
+  let Background = "./images/intro.jpg";
   return (
     <Container
       id={id}

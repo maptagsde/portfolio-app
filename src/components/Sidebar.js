@@ -40,7 +40,7 @@ export const Sidebar = () => {
           <Grid item>
             <Avatar
               alt="Fake Person"
-              src="/images/me.png"
+              src="./images/me.png"
               className={classes.large}
             />
           </Grid>
