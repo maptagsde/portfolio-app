@@ -7,14 +7,13 @@ export const Introduction = ({ id }) => {
   return (
     <Container
       id={id}
+      name={id}
       maxWidth="xl"
       style={{
         backgroundImage: `url(${Background})`,
         height: "100vh"
       }}
-    >
-      <Typography>This is my Introduction Page.</Typography>
-    </Container>
+    ></Container>
   );
 };
 
