@@ -1,24 +1,15 @@
 import React, { Fragment } from "react";
-import { Element as Section, animateScroll as scroll } from "react-scroll";
 import Scroller from "./Scroller";
 //MUI
 import Typography from "@material-ui/core/Typography";
 import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
-import Link from "@material-ui/core/Link";
+import List from "@material-ui/core/List";
 
 //Icons
 import EmailIcon from "@material-ui/icons/Email";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import RoomIcon from "@material-ui/icons/Room";
-import { Container } from "@material-ui/core";
-
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -63,6 +54,7 @@ export const Sidebar = () => {
             </Grid>
           </Grid>
         </Grid>
+
         {/*E-Mail + Icon */}
         <Grid item>
           <Grid container>
@@ -76,7 +68,6 @@ export const Sidebar = () => {
         </Grid>
 
         {/* Links + Section */}
-
         <div className={classes.root}>
           <List component="nav">
             <Scroller

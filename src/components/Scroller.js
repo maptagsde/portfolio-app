@@ -7,15 +7,20 @@ import ListItemText from "@material-ui/core/ListItemText";
 const ScrollLink = Scroll.ScrollLink;
 
 class Scroller extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <Fragment>
-        <ListItem button {...this.props}>
+        <ListItem
+          key={this.props.to}
+          button
+          {...this.props}
+          style={{ paddingTop: 0, paddingBottom: 0 }}
+        >
           <ListItemText
-            style={{ textAlign: "center", textTransform: "uppercase" }}
+            style={{
+              textAlign: "center",
+              textTransform: "uppercase"
+            }}
           >
             {this.props.children}
           </ListItemText>

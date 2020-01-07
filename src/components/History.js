@@ -11,11 +11,7 @@ import SchoolIcon from "@material-ui/icons/School";
 import StarIcon from "@material-ui/icons/Star";
 export const History = ({ id }) => {
   return (
-    <Container
-      id={id}
-      maxWidth="xl"
-      style={{ backgroundColor: "#cfe8fc", height: "100vh" }}
-    >
+    <Container id={id} style={{ backgroundColor: "#cfe8fc", height: "100vh" }}>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

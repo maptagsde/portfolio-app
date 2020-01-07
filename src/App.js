@@ -13,29 +13,18 @@ import Divider from "@material-ui/core/Divider";
 import Drawer from "@material-ui/core/Drawer";
 import Hidden from "@material-ui/core/Hidden";
 import IconButton from "@material-ui/core/IconButton";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import MailIcon from "@material-ui/icons/Mail";
+
 import MenuIcon from "@material-ui/icons/Menu";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 import Tooltip from "@material-ui/core/Tooltip";
 import Grid from "@material-ui/core/Grid";
-import Link from "@material-ui/core/Link";
+
 import TwitterIcon from "@material-ui/icons/Twitter";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import RoomIcon from "@material-ui/icons/Room";
-import { Link as Section, animateScroll as scroll } from "react-scroll";
-import EmailIcon from "@material-ui/icons/Email";
-
-//MUI
-import Avatar from "@material-ui/core/Avatar";
 
 const drawerWidth = 240;
 
@@ -87,8 +76,8 @@ function App(props) {
   const drawer = (
     <div>
       <div className={classes.toolbar}>
-        <Typography>portfolio app</Typography>
-        <Typography> version 1.0</Typography>
+        <Typography>Portfolio-App</Typography>
+        <Typography>v1.0.0</Typography>
       </div>
       <Divider />
       <Sidebar />
@@ -110,7 +99,7 @@ function App(props) {
               <MenuIcon />
             </IconButton>
 
-            <Grid justify="space-between" container spacing={24}>
+            <Grid justify="space-between" container spacing={10}>
               <Grid item></Grid>
               <Grid item>
                 <Tooltip title="Twitter">
@@ -180,22 +169,11 @@ function App(props) {
         </nav>
         <main className={classes.content}>
           <div className={classes.toolbar} />
-          <Introduction id="introduction" name="introduction" />
+          <Introduction id="introduction" />
           <About id="about" />
           <History id="timeline" />
         </main>
       </div>
-      {/*
-      <div id="nav">
-        <Sidebar />
-      </div>
-
-      <div id="content">
-        <Introduction id="introduction" />
-        <About id="about" />
-        <History id="timeline" />
-      </div>
-      */}
     </Fragment>
   );
 }
