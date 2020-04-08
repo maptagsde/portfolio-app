@@ -24,7 +24,13 @@ import Grid from "@material-ui/core/Grid";
 
 import TwitterIcon from "@material-ui/icons/Twitter";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
+
+import InstagramIcon from "@material-ui/icons/Instagram";
+
+import YouTubeIcon from "@material-ui/icons/YouTube";
+
+import Icon from "@mdi/react";
+import { mdiXing } from "@mdi/js";
 
 const drawerWidth = 240;
 
@@ -56,7 +62,7 @@ const useStyles = makeStyles(theme => ({
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3)
+    padding: 0
   },
   large: {
     width: theme.spacing(20),
@@ -75,11 +81,6 @@ function App(props) {
 
   const drawer = (
     <div>
-      <div className={classes.toolbar}>
-        <Typography>Portfolio-App</Typography>
-        <Typography>v1.0.0</Typography>
-      </div>
-      <Divider />
       <Sidebar />
     </div>
   );
@@ -87,54 +88,15 @@ function App(props) {
   return (
     <Fragment>
       <div className={classes.root}>
-        <CssBaseline />
         <AppBar position="fixed">
-          <Toolbar>
-            <IconButton
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleDrawerToggle}
-              className={classes.menuButton}
-            >
-              <MenuIcon />
-            </IconButton>
-
-            <Grid justify="space-between" container spacing={10}>
-              <Grid item></Grid>
-              <Grid item>
-                <Tooltip title="Twitter">
-                  <IconButton
-                    aria-label="twitter"
-                    href="https://www.twitter.com/maptagsde"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <TwitterIcon />
-                  </IconButton>
-                </Tooltip>
-                <Tooltip title="Github">
-                  <IconButton
-                    aria-label="github"
-                    href="https://www.twitter.com/maptagsde"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <GitHubIcon />
-                  </IconButton>
-                </Tooltip>
-                <Tooltip title="LinkedIn">
-                  <IconButton
-                    aria-label="linkedin"
-                    href="https://www.twitter.com/maptagsde"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <LinkedInIcon />
-                  </IconButton>
-                </Tooltip>
-              </Grid>
-            </Grid>
-          </Toolbar>
+          <IconButton
+            aria-label="open drawer"
+            edge="start"
+            onClick={handleDrawerToggle}
+            className={classes.menuButton}
+          >
+            <MenuIcon />
+          </IconButton>
         </AppBar>
 
         <nav className={classes.drawer} aria-label="mailbox folders">

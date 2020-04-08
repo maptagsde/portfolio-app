@@ -10,6 +10,7 @@ export const About = ({ id }) => {
       maxWidth="xl"
     >
       <Typography component="div">This is my Introduction Page.</Typography>
+      <h1 className="fadeInLeft animated">Example</h1>
     </Container>
   );
 };

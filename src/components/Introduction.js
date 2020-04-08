@@ -9,7 +9,7 @@ export const Introduction = ({ id }) => {
       id={id}
       maxWidth="xl"
       style={{
-        backgroundImage: `url(${Background})`,
+        //backgroundImage: `url(${Background})`,
         height: "100vh"
       }}
     >

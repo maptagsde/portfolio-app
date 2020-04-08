@@ -7,6 +7,17 @@ import ListItemText from "@material-ui/core/ListItemText";
 const ScrollLink = Scroll.ScrollLink;
 
 class Scroller extends Component {
+  /*
+  trackEvent(name) {
+    console.log(name);
+    window.analytics.track("buttonClick", {
+      location: "Sidebar",
+      label: name,
+      category: "Menu",
+      type: "Button"
+    });
+  }
+*/
   render() {
     return (
       <Fragment>
